@@ -1,0 +1,120 @@
+// REVIEWS--------------------
+
+.reviews {
+  padding: 100px 0;
+  background-image: url('../images/reviews-bg.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reviews__title {
+  @extend %title-short;
+  color: #ffffff;
+  &::before {
+    background-color: #ffffff;
+  }
+}
+
+.swiper-reviews {
+  padding: 100px 0;
+}
+
+.swiper-slide-reviews__item {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(95, 87, 87, 0.12);
+  max-width: 383px;
+}
+.swiper-slide-reviews__item-img {
+  width: 100%;
+  object-fit: cover;
+}
+.swiper-slide-reviews__info {
+  padding: 18px 30px 38px;
+}
+.swiper-slide-reviews__info-name {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+}
+.swiper-slide-reviews__info-job {
+  margin: 7px 0 21px;
+  color: #979494;
+  font-size: 16px;
+  font-weight: 500;
+}
+.swiper-slide-reviews__info-review {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #8a8787;
+  font-size: 16px;
+  line-height: 151.9%;
+}
+.swiper-slide-reviews__social {
+  border-top: 1px solid #c5b8b8;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide-reviews__social-item:not(:first-child) {
+  margin-left: 28px;
+}
+
+.swiper-pagination-reviews {
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 0;
+    background-color: #d9d9d9;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $red;
+  }
+}
+
+@media (max-width: 1220px) {
+  .reviews {
+    padding: 50px 0;
+  }
+
+  .reviews__title {
+    &::before {
+      display: none;
+    }
+  }
+
+  .swiper-reviews {
+    padding: 0 0 50px;
+  }
+
+  .swiper-slide-reviews__item {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .swiper-slide-reviews__item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .reviews__title {
+    font-size: 27px;
+  }
+
+  .swiper-slide-reviews__info-name {
+    font-size: 16px;
+  }
+  .swiper-slide-reviews__info-job {
+    font-size: 14px;
+  }
+  .swiper-slide-reviews__info-review {
+    font-size: 14px;
+  }
+}

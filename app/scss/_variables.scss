@@ -1,0 +1,48 @@
+// Variables
+$red: #d62e4c;
+$orange: #fd6b3e;
+
+// Title-long
+%title-long {
+  position: relative;
+  font-size: 42px;
+  font-weight: 700;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -105%;
+    height: 1px;
+    width: 100%;
+    background: $red;
+  }
+}
+
+// TITLE-SHORT
+%title-short {
+  color: #000;
+  font-size: 42px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 65px;
+  text-align: center;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: 47%;
+    width: 70px;
+    height: 2px;
+    background: $red;
+  }
+}
+
+// BTN
+%btn {
+  width: 254px;
+  height: 61px;
+  background: $red;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}

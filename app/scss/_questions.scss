@@ -1,0 +1,127 @@
+// QUESTIONS-------------------
+
+.questions {
+  padding: 100px 0;
+  background: #f9f9f9;
+}
+
+.questions__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.questions__info {
+  max-width: 525px;
+}
+.questions__info-title {
+  @extend %title-long;
+  margin-bottom: 29px;
+}
+.questions__info-text {
+  color: #6d6a6a;
+  font-size: 18px;
+  line-height: 189.9%;
+  width: 505px;
+}
+.questions__info-img {
+  width: 100%;
+  object-fit: cover;
+}
+.questions__form {
+  text-align: center;
+  border-top: 10px solid $red;
+  padding: 53px 45px 48px;
+  max-width: 486px;
+  height: 632px;
+  box-shadow: 0px -1px 8px 4px rgba(88, 83, 83, 0.12);
+  background: #ffffff;
+}
+.questions__form-input {
+  width: 396px;
+  height: 75px;
+  background: #f6f6f6;
+  padding: 0 28px;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+.questions__form-textarea {
+  width: 396px;
+  height: 143px;
+  background: #f6f6f6;
+  padding: 16px 28px 0;
+  margin-bottom: 26px;
+  font-size: 16px;
+  resize: none;
+}
+.questions__form-btn {
+  @extend %btn;
+}
+
+@media (max-width: 1100px) {
+  .questions {
+    pad: 50px 0;
+  }
+
+  .questions__inner {
+    flex-direction: column;
+  }
+
+  .questions__info {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .questions__info-title {
+    width: 100%;
+    &::before {
+      display: none;
+    }
+  }
+
+  .questions__info-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .questions__info-title {
+    font-size: 27px;
+  }
+
+  .questions__info-text {
+    font-size: 16px;
+  }
+
+  .questions__form {
+    padding: 53px 30px 44px;
+    max-width: 430px;
+    height: 610px;
+  }
+
+  .questions__form-input {
+    width: 350px;
+    height: 60px;
+  }
+  .questions__form-textarea {
+    width: 350px;
+  }
+
+  .questions__form-btn {
+    width: 180px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 470px) {
+  .questions__form {
+    max-width: 350px;
+  }
+  .questions__form-input {
+    width: 290px;
+  }
+  .questions__form-textarea {
+    width: 290px;
+  }
+}

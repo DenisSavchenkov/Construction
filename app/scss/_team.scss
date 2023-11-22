@@ -1,0 +1,58 @@
+// TEAM----------------------
+
+.team {
+  padding: 100px 0;
+  background: #f9f9f9;
+}
+
+.team__title {
+  @extend %title-short;
+}
+.team__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team__item {
+  padding-bottom: 33px;
+  max-width: 376px;
+  box-shadow: 0px 4px 4px 0px rgba(95, 87, 87, 0.12);
+}
+.team__item-img {
+  width: 100%;
+  object-fit: cover;
+}
+.team__item-job {
+  color: #c2c1c1;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 26px 0 11px;
+  padding-left: 33px;
+}
+.team__item-name {
+  padding-left: 33px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media (max-width: 1190px) {
+  .team {
+    padding: 50px 0;
+  }
+
+  .team__title {
+    font-size: 30px;
+    &::before {
+      display: none;
+    }
+  }
+  .team__items {
+    flex-direction: column;
+  }
+
+  .team__item {
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+}

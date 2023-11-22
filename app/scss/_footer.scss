@@ -1,0 +1,135 @@
+// FOTTER--------------------------
+
+.footer {
+  background: #1c2835;
+  color: #e0e0e0;
+}
+
+.footer__inner {
+  display: flex;
+  border-bottom: 1px solid rgba(239, 239, 239, 0.24);
+}
+.footer__info {
+  max-width: 342px;
+  border-right: 1px solid rgba(239, 239, 239, 0.24);
+  min-height: 359px;
+  padding: 60px 74px 146px 0;
+}
+.footer__info-logo {
+  margin-bottom: 33px;
+}
+.footer__info-text {
+  max-width: 268px;
+  span {
+    color: #d2d2d2;
+    font-weight: 700;
+    line-height: 189.9%;
+  }
+  color: #d2d2d2;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 189.9%;
+}
+.footer__row {
+  padding: 60px 0 50px 60px;
+  display: flex;
+}
+
+.footer__services {
+  margin-right: 50px;
+}
+
+.footer__services-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.footer__services-list {
+  li {
+    width: 200px;
+    color: #d2d2d2;
+
+    margin-bottom: 15px;
+  }
+}
+
+.footer__worktime {
+  margin-right: 50px;
+}
+.footer__worktime {
+  li {
+    width: 200px;
+
+    color: #d2d2d2;
+
+    margin-bottom: 15px;
+  }
+}
+.footer__worktime-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+
+  .location {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .phone {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__social-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.footer__bottom {
+  padding: 24px 0;
+}
+.footer__bottom-text {
+  color: #d2d2d2;
+  text-align: center;
+  font-style: normal;
+  line-height: 157.9%;
+}
+
+@media (max-width: 1160px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer__info {
+    border-right: none;
+    padding: 64px 0 0;
+    min-height: 0;
+    margin-bottom: 50px;
+  }
+
+  .footer__row {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .footer__services {
+    margin-bottom: 50px;
+  }
+
+  .footer__worktime {
+    margin-bottom: 50px;
+  }
+
+  .footer__social {
+    margin-bottom: 30px;
+  }
+}
