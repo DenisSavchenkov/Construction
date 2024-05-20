@@ -80,5 +80,5 @@ exports.scripts = scripts;
 exports.watching = watching;
 exports.images = images;
 
-exports.build = series(cleanDist, build, images);
+exports.build = series(build, images);
 exports.default = parallel(styles, scripts, watching);
